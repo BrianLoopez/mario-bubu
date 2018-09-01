@@ -1,19 +1,21 @@
 ﻿@model int
+            <br/>
+             @{ 
+               var a=Model;
+               var b=Model-1;
+               var c=0;
 
-
-
-            <img style="float: left; padding: 25px; background-color: blue" />   
-
-            <img  style="float: left;" src="~/images/bloque.webp" alt="#"/>
-
-
-        <br style="clear: left;"/>
-
-
-    
-
-
-           
-
-
-
+             }
+             @for( int ione=0;ione<a;ione++){
+                  @for(int itwo=0;itwo<b-c;itwo++)
+                  {
+                      <img style="float: left; padding: 25px; background-color: white" /> 
+                  }
+                  c++;
+                  @for(int ithree =0;ithree<c;ithree++)
+                  {
+                      <img  style="float: left;" src="~/images/bloque.webp" alt="#"/>
+                  }
+                  <img style ="clear:left; padding:25px;">
+                  <br/>
+                }
